@@ -14,6 +14,9 @@ hr {
   height: 1px;
   background-color: black;
 }
+h3 {
+  font-family: "Spectral", serif;
+}
 .topBar {
   margin-left: 8%;
   margin-right: 8%;
@@ -206,4 +209,27 @@ aside p {
 }
 aside button {
   cursor: pointer;
+}
+.topBar {
+  position: sticky;
+  top: 0;
+  background-color: #ffc017;
+  z-index: 1000;
+}
+@keyframes fadeToWhite {
+  from {
+    background-color: #ffc017;
+  }
+  to {
+    background-color: white;
+  }
+}
+
+@keyframes fadeToGreen {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: green;
+  }
 }
